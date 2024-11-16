@@ -17,6 +17,17 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
+/* Selection */
+::-moz-selection {
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
 .btn {
   @apply border border-border rounded-lg py-3 px-8 text-lg text-primary bg-dark hover:bg-secondary transition-colors;
 }
