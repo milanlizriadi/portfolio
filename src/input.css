@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+b,
+u,
+a {
+  @apply text-text;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  @apply border border-border rounded-lg py-3 px-8 text-lg text-primary bg-dark hover:bg-secondary transition-colors;
+}
+
+.btn-primary {
+  @apply bg-primary text-foreground hover:bg-primaryDarker;
+}
