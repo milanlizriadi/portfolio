@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="en" class="overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,8 @@
     <main data-scroll-container>
       <section
         id="home"
-        class="h-screen w-screen flex justify-center items-center flex-col gap-12 relative">
+        class="h-screen w-screen flex justify-center items-center flex-col gap-12 relative"
+        data-scroll-section>
         <h1 class="text-primary text-6xl md:text-7xl lg:text-8xl font-bold">
           Milan Lizriadi
         </h1>
@@ -33,17 +34,17 @@
         </p>
 
         <div class="flex flex-row gap-4">
-          <a href="#" class="btn btn-primary">About Me</a>
-          <a href="#" class="btn">Contact Me</a>
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#contact" class="btn">Contact Me</a>
         </div>
       </section>
 
-      <section id="about" class="pt-32 pb-36">
+      <section id="about" class="pt-32 pb-36" data-scroll-section>
         <div class="flex flex-wrap justify-center">
           <div class="w-full px-4">
             <div class="max-w-xl mx-auto text-center mb-16">
               <h2
-                class="font-bold text-primary text-3xl mb-4 sm:text4xl lg:text-5xl relative section-title">
+                class="font-bold text-primary text-4xl mb-4 lg:text-5xl relative section-title">
                 About Me.
               </h2>
               <p>Things about me</p>
@@ -52,11 +53,11 @@
         </div>
       </section>
 
-      <section id="projects" class="pt-32 pb-36">
+      <section id="projects" class="pt-32 pb-36" data-scroll-section>
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h2
-              class="font-bold text-primary text-3xl mb-4 sm:text4xl lg:text-5xl relative section-title">
+              class="font-bold text-primary text-4xl mb-4 lg:text-5xl relative section-title">
               Projects.
             </h2>
             <p>Things that i make</p>
@@ -128,6 +129,91 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="contact" class="pt-32 pb-36" data-scroll-section>
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+              <h2
+                class="font-bold text-primary text-4xl mb-4 lg:text-5xl relative section-title">
+                Contact Me.
+              </h2>
+              <p>Lets talk</p>
+            </div>
+          </div>
+
+          <form>
+            <div class="w-full lg:w-1/2 md:w-2/3 mx-auto">
+              <div class="w-full mb-8">
+                <label
+                  for="contact_name"
+                  class="text-2xl text-primary font-bold mb-8"
+                  >Name</label
+                >
+
+                <input
+                  type="text"
+                  placeholder="What's your name?"
+                  id="contact_name"
+                  required
+                  class="mt-4 w-full bg-dark text-primary px-3 py-4 rounded-lg focus:outline-none focus:ring-border focus:ring-1" />
+              </div>
+
+              <div class="w-full mb-8">
+                <label
+                  for="contact_email"
+                  class="text-2xl text-primary font-bold mb-8"
+                  >Email</label
+                >
+
+                <input
+                  type="email"
+                  placeholder="What's your email?"
+                  id="contact_email"
+                  required
+                  class="mt-4 w-full bg-dark text-primary px-3 py-4 rounded-lg focus:outline-none focus:ring-border focus:ring-1" />
+              </div>
+
+              <div class="w-full mb-8">
+                <label
+                  for="contact_phone"
+                  class="text-2xl text-primary font-bold mb-8"
+                  >Phone Number</label
+                >
+
+                <input
+                  type="number"
+                  placeholder="Optional, you can leave it blank"
+                  id="contact_phone"
+                  class="rounded-lg mt-4 w-full bg-dark text-primary px-3 py-4 focus:outline-none focus:ring-border focus:ring-1" />
+              </div>
+
+              <div class="w-full mb-8">
+                <label
+                  for="contact_message"
+                  class="text-2xl text-primary font-bold mb-8"
+                  >Message</label
+                >
+
+                <textarea
+                  placeholder="What do you want to say?"
+                  id="contact_message"
+                  required
+                  autocomplete="off"
+                  class="rounded-lg mt-4 w-full bg-dark text-primary px-3 py-4 focus:outline-none focus:ring-border focus:ring-1 h-36"></textarea>
+              </div>
+
+              <div class="w-full">
+                <button
+                  type="submit"
+                  class="border border-none rounded-lg py-3 px-8 text-lg text-primary bg-dark hover:bg-secondary transition-colors w-full">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
 
