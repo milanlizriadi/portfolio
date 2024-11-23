@@ -43,3 +43,17 @@ a {
 .hamburger-lines {
   @apply h-[2px] w-7 bg-primary rounded-full;
 }
+
+.fidgetSpinner:hover {
+  animation: fidgetSpinnerHover 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fidgetSpinnerHover {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
