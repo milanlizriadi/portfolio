@@ -48,41 +48,49 @@ p {
   background: white;
 }
 
-section {
-  padding: 8rem;
-}
-
 section#about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 3rem;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
 }
 
-section .section-desc {
+.section-title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 6rem;
+}
+
+.section-desc {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #aaaaaa;
+}
+
+.about-content {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.about-content p {
+  flex: 1 1 300px;
+  margin: 0;
+  line-height: 1.6;
   margin-top: 0.5rem;
   text-align: center;
   color: #999999;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  transition: 400ms;
 }
 
-section .section-title {
-  text-transform: uppercase;
-}
-
-.section-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.section-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 3rem;
-  text-align: center;
+.about-content p:hover {
+  color: #aaaaaa;
+  transition: 400ms;
 }
 
 @media (max-width: 900px) {
