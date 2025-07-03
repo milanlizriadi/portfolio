@@ -229,4 +229,8 @@ nav {
   .menu-footer a::after {
     display: none;
   }
+
+  .menu-footer {
+    display: none;
+  }
 }

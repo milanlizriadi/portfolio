@@ -82,26 +82,7 @@ section .section-title {
   align-items: center;
   flex-direction: column;
   margin-bottom: 3rem;
-}
-
-.about-text-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  gap: 5rem;
-}
-
-.about-text {
-  color: #ccc;
-  max-width: 40%;
-  line-height: 1.6;
-  transition: 400ms;
-}
-
-.about-text:hover {
-  color: #ffffff;
-  transition: 400ms;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
