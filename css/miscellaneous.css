@@ -8,8 +8,9 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background-color: #000000;
 }
 
 img {
@@ -45,4 +46,70 @@ p {
 ::selection {
   color: black;
   background: white;
+}
+
+section {
+  padding: 8rem;
+}
+
+section#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .section-desc {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #999999;
+  font-size: 1.5rem;
+}
+
+section .section-title {
+  text-transform: uppercase;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.about-text {
+  color: #ccc;
+  max-width: 40%;
+  line-height: 1.6;
+  transition: 400ms;
+}
+
+.about-text:hover {
+  color: #ffffff;
+  transition: 400ms;
+}
+
+@media (max-width: 900px) {
+  section .section-title {
+    font-size: 4rem;
+  }
+
+  section .section-desc {
+    font-size: 1rem;
+  }
 }
