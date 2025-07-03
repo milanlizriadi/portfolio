@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const menuOverlay = document.querySelector(".menu-overlay");
   const menuContent = document.querySelector(".menu-content");
-  const menuPreviewImg = document.querySelector(".menu-preview-img");
   const menuLinks = document.querySelectorAll(".link a");
 
   let isOpen = false;
@@ -16,21 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
     else closeMenu();
   });
 
-  function cleanupPreviewImages() {
-    const previewImages = menuPreviewImg.querySelectorAll("img");
-    if (previewImages.length > 3) {
-      for (let i = 0; i < previewImages.length - 3; i++) {
-        menuPreviewImg.removeChild(previewImages[i]);
-      }
-    }
-  }
-
-  function resetPreviewImages() {
-    menuPreviewImg.innerHTML = "";
-    const defaultPreviewImg = document.createElement("img");
-    defaultPreviewImg.src = "img/1.png";
-    menuPreviewImg.appendChild(defaultPreviewImg);
-  }
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (isOpen) closeMenu();
+    });
+  });
 
   function animateMenuToggle(isOpening) {
     const open = document.querySelector("p#menu-open");
@@ -86,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       y: "0%",
       opacity: 1,
       duration: 1,
-      delat: 0.75,
+      delay: 0.75,
       stagger: 0.1,
       ease: "power3.out",
     });
@@ -139,36 +128,4 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
-
-  // menuLinks.forEach((link) => {
-  //   link.addEventListener("mouseover", () => {
-  //     if (!isOpen || isAnimating) return;
-
-  //     const imgSrc = link.getAttribute("data-img");
-  //     if (!imgSrc) return;
-
-  //     const previewImages = menuPreviewImg.querySelectorAll("img");
-  //     if (
-  //       previewImages.length > 0 &&
-  //       previewImages[previewImages.length - 1].src.endsWith(imgSrc)
-  //     )
-  //       return;
-
-  //     const newPreviewImg = document.createElement("img");
-  //     newPreviewImg.src = imgSrc;
-  //     newPreviewImg.style.opacity = "0";
-  //     newPreviewImg.style.transform = "scale(1.25) rotate(10deg)";
-
-  //     menuPreviewImg.appendchild(newPreviewImg);
-  //     cleanupPreviewImages();
-
-  //     gsap.to(newPreviewImg, {
-  //       opacity: 1,
-  //       scale: 1,
-  //       rotation: 0,
-  //       duration: 0.75,
-  //       ease: "power2.out",
-  //     });
-  //   });
-  // });
 });
