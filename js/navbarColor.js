@@ -1,4 +1,4 @@
-const sectionColors = ["#000000", "#FFFFFF"];
+const sectionColors = ["", "#FFFFFF"];
 const navColors = ["#FFFFFF", "#000000"];
 
 // Ambil tinggi navbar secara dinamis
