@@ -19,8 +19,19 @@ img {
   object-fit: cover;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i {
   color: #ffffff;
+}
+
+h1 {
   font-size: 7rem;
   font-weight: 400;
   letter-spacing: -0.2rem;
@@ -31,7 +42,6 @@ a,
 p {
   position: relative;
   text-decoration: none;
-  color: #ffffff;
   font-size: 1rem;
   font-weight: 300;
 }
