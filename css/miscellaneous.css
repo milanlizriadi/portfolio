@@ -10,7 +10,6 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  background-color: #000000;
 }
 
 img {
@@ -29,6 +28,21 @@ p,
 a,
 i {
   color: #ffffff;
+  background: none;
+  z-index: 1;
+}
+
+section.white-section h1,
+section.white-section h2,
+section.white-section h3,
+section.white-section h4,
+section.white-section h5,
+section.white-section h6,
+section.white-section p,
+section.white-section a,
+section.white-section i {
+  color: #111111;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -92,15 +106,8 @@ section#about {
   line-height: 1.6;
   margin-top: 0.5rem;
   text-align: center;
-  color: #999999;
   font-size: 1.1rem;
   text-align: justify;
-  transition: 400ms;
-}
-
-.about-content p:hover {
-  color: #aaaaaa;
-  transition: 400ms;
 }
 
 @media (max-width: 900px) {
