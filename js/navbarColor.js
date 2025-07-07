@@ -1,7 +1,8 @@
+// section color change on scroll - leave it blank to use default color
 const sectionColors = ["", "#FFFFFF"];
 const navColors = ["#FFFFFF", "#000000"];
 
-// Ambil tinggi navbar secara dinamis
+// get navbar height
 const navbar = document.querySelector(".navbarColor");
 const navbarHeight = navbar ? navbar.offsetHeight : 0;
 
