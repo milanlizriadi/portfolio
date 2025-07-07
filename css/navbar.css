@@ -190,6 +190,7 @@ nav {
 
 #hero h1 {
   width: 80%;
+  text-align: left;
 }
 
 .menu-toggle p#menu-close {
