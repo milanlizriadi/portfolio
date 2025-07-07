@@ -95,4 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "<"
   );
+
+  // remove the loader overlay
+  tl.set(".loader", {
+    display: "none",
+    pointerEvents: "none",
+  });
 });
