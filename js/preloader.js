@@ -5,6 +5,8 @@ gsap.registerPlugin(CustomEase);
 CustomEase.create("hop", "0.9, 0, 0.1, 1");
 
 document.addEventListener("DOMContentLoaded", () => {
+  const loaderOverlay = document.querySelector(".loader");
+
   const tl = gsap.timeline({
     delay: 0.3,
     defaults: {
