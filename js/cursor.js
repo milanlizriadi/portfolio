@@ -1,10 +1,3 @@
-/**
- * YouTube Tutorial:
- * https://youtu.be/wG_5453Vq98
- */
-
-console.clear();
-
 // Select the circle element
 const circleElement = document.querySelector(".cursor");
 
