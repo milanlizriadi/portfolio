@@ -1,5 +1,5 @@
-// section color change on scroll - leave it blank to use default color
-const sectionColors = ["", "#FFFFFF"];
+// section color change on scroll
+const sectionColors = ["transparent", "#FFFFFF"];
 const navColors = ["#FFFFFF", "#000000"];
 
 // get navbar height
