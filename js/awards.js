@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
       img.style.top = 0;
       img.style.left = 0;
       img.style.scale = 0;
-      img.style.zIndex = Date.now();
+      img.style.zIndex = 2;
 
       awardPreview.appendChild(img);
 
