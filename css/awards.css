@@ -1,0 +1,129 @@
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+section.awards h1 {
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 0.9;
+}
+
+section.awards {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.awards {
+  min-height: 100vh;
+  height: max-content;
+}
+
+.awards p {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.awards-list {
+  border-top: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+.award {
+  height: 80px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.award-wrapper {
+  position: relative;
+  height: 240px;
+  will-change: transform;
+  transform: translateY(-160px);
+}
+
+.award-name,
+.award-project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #000000;
+}
+
+.award-name {
+  background-color: #ffffff;
+}
+
+.award-name h1 {
+  color: #000000;
+}
+
+.award-project {
+  background-color: #000000;
+}
+
+.award-project h1 {
+  color: #ffffff !important;
+}
+
+.award-preview {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 30%;
+  height: 30%;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .award-preview {
+    width: 50%;
+    height: 40%;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  section.awards h1 {
+    font-size: 42px;
+  }
+
+  .awards p {
+    font-size: 1rem;
+  }
+}
