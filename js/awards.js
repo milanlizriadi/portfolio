@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <h1>${award.type}</h1>
         </div>
         <div class="award-project">
-          <h1>${award.project}</h1>
+          <h1>
+            <a href="${award.github}" target="_blank">${award.project}</a>
+          </h1>
           <h1>${award.label}</h1>
         </div>
         <div class="award-name">
