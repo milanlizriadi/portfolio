@@ -202,6 +202,15 @@
     <!-- Cursor -->
     <!-- <div class="cursor"></div> -->
 
+    <!-- Landing Page image Parallax -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const scrollY = window.scrollY;
+        const heroImg = document.querySelector(".hero-img img");
+        heroImg.style.transform = `translateY(${scrollY * 0.3}px)`;
+      });
+    </script>
+
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
